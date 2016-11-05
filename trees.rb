@@ -24,11 +24,15 @@ class TreeNode
 end
 
 # Test values
-root = TreeNode.new("80")
-root.left = TreeNode.new("59")
-root.left.left = TreeNode.new("19")
-root.left.right = TreeNode.new("78")
-root.right = TreeNode.new("95")
+root = TreeNode.new("Les")
+root.left = TreeNode.new("Cathy")
+root.left.left = TreeNode.new("Alex")
+root.left.right = TreeNode.new("Frank")
+root.right = TreeNode.new("Sam")
+root.right.left = TreeNode.new("Nancy")
+root.right.right = TreeNode.new("Violet")
+root.right.right.left = TreeNode.new("Tony")
+root.right.right.right = TreeNode.new("Wendy")
 
 # Printing values
 root.puts
@@ -37,5 +41,8 @@ root.left.left.puts
 root.left.right.puts
 root.right.puts
 
+#Printing one parent and children association
 root.debug
 root.left.debug
+root.right.debug
+root.right.right.debug
