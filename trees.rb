@@ -4,19 +4,36 @@ There are pointers to two children, a left and a right.
 =end
 
 class TreeNode
-  attr_accessor :left, :right, :value
+  attr_accessor :value, :left, :right
 
-  def initialize val, left, right
+  def initialize val
     @value = val
-    @left = left
-    @right = right
+    @left = nil
+    @right = nil
   end
 
-  def print
-    print @value + " "
+  def puts
+    print "The value at this node is #{@value} \n"
   end
 
   def debug
-    print " " + @left.data "-" + @value + "-" + @right.data
+    print "......parent node -> #{@value} \n                     /\\ \n left child node -> #{@left.value.to_s} #{@right.value.to_s} <- right child node \n \n"
   end
 end
+
+# Initializing the values for the tree
+root = TreeNode.new("80")
+root.left = TreeNode.new("59")
+root.left.left = TreeNode.new("19")
+root.left.right = TreeNode.new("78")
+root.right = TreeNode.new("95")
+
+# Checking values
+root.puts
+root.left.puts
+root.left.left.puts
+root.left.right.puts
+root.right.puts
+
+root.debug
+root.left.debug
