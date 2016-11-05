@@ -17,7 +17,9 @@ class TreeNode
   end
 
   def debug
-    print "......parent node -> #{@value} \n                     /\\ \n left child node -> #{@left.value.to_s} #{@right.value.to_s} <- right child node \n \n"
+    print "\n #{@value} \n"
+    print " /\\ \n"
+    print "#{@left.value.to_s} #{@right.value.to_s} \n"
   end
 end
 
