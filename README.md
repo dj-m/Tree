@@ -1,7 +1,7 @@
 # Tree
 A versatile binary tree data structure.
 
-#Tree Terminology
+## Tree Terminology
 - Root node: The topmost node or initial point of departure for your Binary Tree, that has no parent, most likely, with children stemming from it.
 
 - Leaf node: A node, or point of departure, that doesn't have any children, typically, on the outside edge of the tree.
