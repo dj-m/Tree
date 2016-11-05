@@ -23,14 +23,14 @@ class TreeNode
   end
 end
 
-# Initializing the values for the tree
+# Test values
 root = TreeNode.new("80")
 root.left = TreeNode.new("59")
 root.left.left = TreeNode.new("19")
 root.left.right = TreeNode.new("78")
 root.right = TreeNode.new("95")
 
-# Checking values
+# Printing values
 root.puts
 root.left.puts
 root.left.left.puts
