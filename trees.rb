@@ -3,10 +3,10 @@
 class TreeNode
   attr_accessor :value, :left, :right
 
-  def initialize(val)
+  def initialize(val, left = nil, right = nil)
     @value = val
-    @left = nil
-    @right = nil
+    @left = left
+    @right = right
   end
 
   def puts
@@ -52,7 +52,8 @@ class BinaryTree
   end
 
   def create_sample_tree
-    @root = TreeNode.new('Les'), @root.left = TreeNode.new('Cathy')
+    @root = TreeNode.new('Les')
+    @root.left = TreeNode.new('Cathy')
     @root.left.left = TreeNode.new('Alex')
     @root.left.right = TreeNode.new('Frank')
     @root.right = TreeNode.new('Sam')
