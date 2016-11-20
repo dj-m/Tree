@@ -17,5 +17,5 @@ A versatile binary tree data structure.
 ### Traversing & Traversal Algorithms
 
 There're two main ways of walking a tree...
-- Depth-first: Completely traverse one sub-tree before exploring a sibling sub-tree.
-- Breath-first: Traverse all nodes at one level before progressing to the next level.
+- Depth-first/DFS: Completely traverse one sub-tree before exploring a sibling sub-tree.
+- Breath-first/BFS: Traverse all nodes at one level before progressing to the next level.
