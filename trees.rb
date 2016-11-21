@@ -3,14 +3,14 @@
 class TreeNode
   attr_accessor :value, :left, :right
 
-  def initialize(val, left = nil, right = nil)
+  def initialize(val, direction = {})
     @value = val
-    @left = left
-    @right = right
+    @left = direction[:left]
+    @right = direction[:right]
   end
 
-  def puts
-    print "The value at this node is #{@value} \n"
+  def to_s
+    puts "The value at this node is #{@value}"
   end
 
   def debug
@@ -28,11 +28,11 @@ end
 # root.left.right = TreeNode.new('78')
 
 # Printing values
-# root.puts
-# root.left.puts
-# root.left.left.puts
-# root.left.right.puts
-# root.right.puts
+# root.to_s
+# root.left.to_s
+# root.left.left.to_s
+# root.left.right.to_s
+# root.right.to_s
 
 # Printing one parent and children association
 # root.debug
